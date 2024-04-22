@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: url-fetcher-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: url-fetcher
+  template:
+    metadata:
+      labels:
+        app: url-fetcher
+    spec:
+      containers:
+      - name: url-fetcher
+        image: rox7/url-fetcher:latest
+        ports:
+        - containerPort: 8080
+
