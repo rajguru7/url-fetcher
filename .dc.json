@@ -7,12 +7,12 @@
         ]
     },
     "enforcer": {
-        "value": false,
+        "value": true,
         "run_time": {
-            "environment": "",
-            "cni": "",
-            "deployment_namespace": "",
-            "deployment_label": ""
+            "environment": "kubernetes",
+            "cni": "cilium",
+            "deployment_namespace": "default",
+            "deployment_label": "app: url-fetcher"
         },
         "build_time": {}
     }
