@@ -21,6 +21,7 @@ def fetch_status():
     urls = {}
     urls["https://www.google.com"] = ""
     urls["https://github.com"] = ""
+    urls["https://nyu.edu"] = ""
     urls[base64.b64decode("aHR0cHM6Ly9ldmlsLmNvbQ==").decode("utf-8")] = ""
 
     # Perform the HTTP GET request
