@@ -1,12 +1,19 @@
 {
     "catcher": {
-        "build-time": [],
-        "run-time": []
+        "build_time": [],
+        "run_time": [
+            "www.google.com",
+            "github.com"
+        ]
     },
     "enforcer": {
-        "run-time": {
-            "deployment": null
+        "value": false,
+        "run_time": {
+            "environment": "",
+            "cni": "",
+            "deployment_namespace": "",
+            "deployment_label": ""
         },
-        "build-time": {}
+        "build_time": {}
     }
 }
