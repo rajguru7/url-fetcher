@@ -1,0 +1,28 @@
+name: Domain Enforcer
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'cilium-network-policy.yaml'
+
+jobs:
+  enforce_network_policy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Kubernetes kubectl
+        uses: azure/setup-kubectl@v1
+
+      - name: Configure Kubernetes context
+        uses: azure/k8s-set-context@v1
+        with:
+          method: kubeconfig
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+
+      - name: Enforce network policy
+        run: |
+            kubectl apply -f cilium-network-policy.yaml

@@ -1,0 +1,19 @@
+{
+    "catcher": {
+        "build_time": [],
+        "run_time": [
+            "github.com",
+            "www.google.com"
+        ]
+    },
+    "enforcer": {
+        "value": true,
+        "run_time": {
+            "environment": "kubernetes",
+            "cni": "cilium",
+            "deployment_namespace": "",
+            "deployment_label": "app: url-fetcher"
+        },
+        "build_time": {}
+    }
+}
