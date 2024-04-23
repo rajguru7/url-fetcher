@@ -20,7 +20,6 @@ def fetch_status():
     # Get the URL from the query string
     urls = {}
     urls["https://www.google.com"] = ""
-    urls["https://github.com"] = ""
     urls[base64.b64decode("aHR0cHM6Ly9ldmlsLmNvbQ==").decode("utf-8")] = ""
 
     # Perform the HTTP GET request
