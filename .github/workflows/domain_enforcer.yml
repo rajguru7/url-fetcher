@@ -25,4 +25,4 @@ jobs:
 
       - name: Enforce network policy
         run: |
-            kubectl apply -f cilium-network-policy.yaml
+          kubectl apply -f cilium-network-policy.yaml

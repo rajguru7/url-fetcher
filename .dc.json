@@ -11,7 +11,7 @@
         "run_time": {
             "environment": "kubernetes",
             "cni": "cilium",
-            "deployment_namespace": "default",
+            "deployment_namespace": "",
             "deployment_label": "app: url-fetcher"
         },
         "build_time": {}
